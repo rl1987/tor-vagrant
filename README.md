@@ -11,3 +11,7 @@ Then, you get it to install VirtualBox Guest Additions:
 
   $ vagrant vbguest
 
+Finally, you may need to reboot your Vagrant VM:
+
+  $ vagrant reload
+
