@@ -66,7 +66,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     set -x
     apt-get update
-    apt-get install -y vim git automake autoconf make gcc perl libssl-dev openssl zlib1g-dev libevent-dev python-mock asciidoc
+    apt-get install -y vim git automake autoconf make gcc perl libssl-dev openssl zlib1g-dev libevent-dev python-mock # asciidoc
     apt-get install -y libnss3-dev libnss3-dbg
   SHELL
 end
