@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "debian/stretch64"
+  config.vm.box = "ubuntu/bionic64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -66,7 +66,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     set -x
     apt-get update
-    apt-get install -y vim git automake autoconf make gcc perl libssl-dev openssl zlib1g-dev libevent-dev python-mock # asciidoc
+    apt-get install -y vim git automake autoconf make gcc perl libssl-dev openssl zlib1g-dev libevent-dev python-mock asciidoc
     apt-get install -y libnss3-dev libnss3-dbg
+    apt-get install -y doxygen
   SHELL
 end
