@@ -70,5 +70,6 @@ Vagrant.configure("2") do |config|
     apt-get install -y libnss3-dev libnss3-dbg
     apt-get install -y doxygen
     apt-get install -y shellcheck
+    apt-get install -y coccinelle
   SHELL
 end
