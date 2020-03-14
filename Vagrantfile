@@ -69,5 +69,6 @@ Vagrant.configure("2") do |config|
     apt-get install -y vim git automake autoconf make gcc perl libssl-dev openssl zlib1g-dev libevent-dev python-mock asciidoc
     apt-get install -y libnss3-dev libnss3-dbg
     apt-get install -y doxygen
+    apt-get install -y shellcheck
   SHELL
 end
